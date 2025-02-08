@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+h1 {
+    color: #fff;
+}
+
+#grid-container {
+    display: grid;
+    width: 90vw; /* 90% dari lebar viewport */
+    height: 90vw; /* Membuat tinggi sama dengan lebar untuk bentuk persegi */
+    max-width: 450px;
+    max-height: 450px; 
+    margin-bottom: 20px;
+    grid-template-columns: repeat(16, 1fr); /* Default 16x16 */
+    grid-template-rows: repeat(16, 1fr);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+}
+
+label {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-picker p {
+    color: #fff;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-picker .color-box {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+#eraser.active {
+    background-color: #ccc; /* Ganti dengan warna yang sesuai */
+    border: 2px solid #000;
+}
+
+.btn button {
+    background-color: rgb(125, 125, 125);
+    border-radius: 6px;
+    border-width: 0;
+    padding: 5px;
+    width: 70px;
+}
+
+footer {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.link-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    color: rgb(156, 156, 255);
+}
